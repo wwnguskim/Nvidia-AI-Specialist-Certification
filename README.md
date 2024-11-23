@@ -53,7 +53,7 @@ To learn from YOLOv5 with 640 resolution images, we first made the images into 6
 
 [비디오 리사이저 - 온라인에서 무료로 비디오 해상도 변경](https://online-video-cutter.com/ko/resize-video)
 
-![KakaoTalk_20241124_001100077.png](KakaoTalk_20241124_001100077.png)
+![KakaoTalk_20241124_001100077](https://github.com/user-attachments/assets/e6c5b9e5-3484-4f9c-bee4-b44433af12be)
 
 DarkLabel, also known as Video/Image Labeling and Annotation Tool, was used to image or annotate images made at 640 x 640 resolution in frame units.
 
@@ -61,21 +61,21 @@ DarkLabel, also known as Video/Image Labeling and Annotation Tool, was used to i
 
 [https://drive.google.com/file/d/1fERIfKXkshCXhUAZ7lkzrAiPM8M5fvwa/view?usp=drive_link](https://drive.google.com/file/d/1fERIfKXkshCXhUAZ7lkzrAiPM8M5fvwa/view?usp=drive_link)
 
-![캡처.PNG](%25EC%25BA%25A1%25EC%25B2%2598.png)
+![%EC%BA%A1%EC%B2%98](https://github.com/user-attachments/assets/348a29e6-5649-4f55-b909-d29f516f6199)
 
 In the DarkLabel program, an image can be converted into an image in units of frames. First, a 640 x 640 resolution image is selected through Open Video. After that, labeled frames only will have the check mark enabled but deactivate the check mark. After that, it is converted into an image in a folder called images through as images.
 
-![KakaoTalk_20241118_181232351.png](KakaoTalk_20241118_181232351.png)
+![KakaoTalk_20241118_181232351](https://github.com/user-attachments/assets/c5c12e87-4931-4a68-b920-e335d06e70bb)
 
 You can check that the image came into the images folder.
 
-![캡처.PNG](%25EC%25BA%25A1%25EC%25B2%2598%201.png)
+![%EC%BA%A1%EC%B2%98 1](https://github.com/user-attachments/assets/ccfbb9cd-dd53-4d90-a177-3b39b8e695dc)
 
 Now the converted image is annnotated through DarkLabel.
 
 First, add classes through darklabel.yml before annnotation.
 
-![캡처.PNG](%25EC%25BA%25A1%25EC%25B2%2598%202.png)
+![%EC%BA%A1%EC%B2%98 2](https://github.com/user-attachments/assets/233c0a51-9b2c-4388-83c3-2adb41bcbc1e)
 
 Create my_classes2 in the yml file and add a drone for the class name.
 
@@ -98,15 +98,15 @@ format1:    # darknet yolo (predefined format]
 
 It can be seen that a class called darknet yolo has been added to the DarkLabel program and one class has been added at the bottom.
 
-![캡처.PNG](%25EC%25BA%25A1%25EC%25B2%2598%203.png)
+![%EC%BA%A1%EC%B2%98 3](https://github.com/user-attachments/assets/d0a1ac24-16cc-4c49-abec-aa324931901d)
 
 From Dark Label, the converted image was retrieved by selecting the images folder through the Open Images Folder. After selecting Box + Label, annnotation was made in the drone that matches the class as shown in the picture below. After annnotation was completed, a folder called labels was created through GT Save As and saved in the folder.
 
-![KakaoTalk_20241118_181306518.png](KakaoTalk_20241118_181306518.png)
+![KakaoTalk_20241118_181306518](https://github.com/user-attachments/assets/ae101325-f135-4ce1-bc11-19d900026889)
 
 You can see that there is an annotated txt file in labels.
 
-![캡처.PNG](%25EC%25BA%25A1%25EC%25B2%2598%204.png)
+![%EC%BA%A1%EC%B2%98 4](https://github.com/user-attachments/assets/37e8332f-bf74-4d58-83b7-cc8acb0fed62)
 
 ### dataset_lane.zip:
 
@@ -116,7 +116,7 @@ You can see that there is an annotated txt file in labels.
 
 Install Google Colaboratory on Google Drive.
 
-![캡처.PNG](%25EC%25BA%25A1%25EC%25B2%2598%205.png)
+![%EC%BA%A1%EC%B2%98 5](https://github.com/user-attachments/assets/771b6a6e-8b2c-44b0-8b83-85194e52721c)
 
 Enter the code to connect to Google Drive in the command prompt:
 
@@ -261,11 +261,11 @@ You can check multiple data as shown below.There are losses used during training
 
 These losses are optimized for YOv5, and final loss is defined as the sum of these three losses.In the training process, these losses are used to update the weight of the model through reverse wave.Based on these results, YOv5 models are learning to perform more better performance to perform object detection tasks.
 
-![KakaoTalk_20241120_234920992.png](KakaoTalk_20241120_234920992.png)
+![KakaoTalk_20241120_234920992](https://github.com/user-attachments/assets/b9c49293-219d-4711-b4c6-9a396aac5c59)
 
 After the training is complete, you can see that exp has been trained in the train folder inside the yolov5 folder.
 
-![캡처.PNG](%25EC%25BA%25A1%25EC%25B2%2598%206.png)
+![%EC%BA%A1%EC%B2%98 6](https://github.com/user-attachments/assets/506a5e23-6535-4b6d-8701-2fb963841681)
 
 The learning outcomes are as follows.
 
@@ -275,39 +275,39 @@ The learning outcomes are as follows.
 
 **labels_correlogram**
 
-![labels_correlogram.jpg](labels_correlogram.jpg)
+![labels_correlogram](https://github.com/user-attachments/assets/051b7af6-1e5c-4e64-9eab-46b34bafd78e)
 
 **labels**
 
-![labels.jpg](labels.jpg)
+![labels](https://github.com/user-attachments/assets/24d111ab-834c-44cf-931d-911809e89aad)
 
 **F1_curve**
 
-![F1_curve.png](F1_curve.png)
+![F1_curve](https://github.com/user-attachments/assets/f15c205f-ef89-425a-8a48-0c02c2d39a30)
 
 **PR_curve**
 
-![PR_curve.png](PR_curve.png)
+![PR_curve](https://github.com/user-attachments/assets/9e3c9f4f-6240-4426-bb9d-87cb6c45a295)
 
 **P_curve**
 
-![P_curve.png](P_curve.png)
+![P_curve](https://github.com/user-attachments/assets/b55235d8-f355-4301-b38a-d7119f50c747)
 
 **R_curve**
 
-![R_curve.png](R_curve.png)
+![R_curve](https://github.com/user-attachments/assets/a23aca52-e43d-438a-a838-6273e896913e)
 
 **results**
 
-![results.png](results.png)
+![results](https://github.com/user-attachments/assets/de712a44-837c-4f32-9675-85ad370b6bed)
 
 **train_batch**
 
-![train_batch0.jpg](train_batch0.jpg)
+![train_batch0](https://github.com/user-attachments/assets/5eb889de-444f-405f-8a08-9f43ccc7411a)
 
 **val_batch**
 
-![val_batch0_labels.jpg](val_batch0_labels.jpg)
+![val_batch0_labels](https://github.com/user-attachments/assets/c8158939-d2b0-4891-8a75-c15a8bb025b8)
 
 ### **Validation of YOLOv5 Model Training Results:**
 
@@ -325,17 +325,17 @@ After learning, work is needed to check the learning results. There is a weights
 
 **detect.py execution image:**
 
-![KakaoTalk_20241120_235200837.png](KakaoTalk_20241120_235200837.png)
+![KakaoTalk_20241120_235200837](https://github.com/user-attachments/assets/9d8df314-fc65-464a-a3a1-defe5aae2415)
 
 **Learning outcomes with detect.py:**
 
-![00000000.png](00000000.png)
+![00000000](https://github.com/user-attachments/assets/50fda3da-a5d9-47d9-b975-1b412dc364c7)
 
-![00000161.png](00000161.png)
+![00000060](https://github.com/user-attachments/assets/25a5de0d-0589-4191-b0c4-585c4c6827c6)
 
-![00000060.png](00000060.png)
+![00000161](https://github.com/user-attachments/assets/fcb094ef-a35d-47bc-ad7f-75bf2a6b80b4)
 
-![00000297.png](00000297.png)
+![00000297](https://github.com/user-attachments/assets/d9213935-9e80-475d-af7e-dc12d3787460)
 
 **detect.py execution video:**
 
@@ -343,7 +343,8 @@ After learning, work is needed to check the learning results. There is a weights
 !python detect.py --weights /content/drive/MyDrive/yolov5/runs/train/exp/weights/best.pt --img 640 --conf 0.1 --source /content/drive/MyDrive/test/Drone.mp4
 ```
 
-[Drone_final.mp4](Drone_final.mp4)
+https://github.com/user-attachments/assets/1553d4bb-d94e-4e2b-b8cd-a091f6c4f3ab
+
 
 **lane_detect(video)**
 
